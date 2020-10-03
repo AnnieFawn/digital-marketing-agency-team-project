@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
+        <title>NAS. Agency</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
@@ -55,6 +55,8 @@
           <li class="nav-item"><a href="#">About &nbsp;</a>
         </li>
           <li class="nav-item"><a href="#">Blog &nbsp;</a>
+        </li>
+        <li class="nav-item"><a href="#">Contact &nbsp;</a>
         </li>
           <l1>
           <li class="nav-item"><a href="#"><i class="fas fa-search"></i></a></li>
@@ -121,9 +123,15 @@
                 </div>
                             <p><br><br><br><br>finibus, enim nisl pulvinar velit, id pretium lacus neque quis ligula. Pellentesque ut sollicitudin arcu, nec semper ante. Vivamus sed quam a enim mattis lobortis in vel risus. Mauris tincidunt dui gravida quam maximus, vel egestas nibh tempor. Nullam vel ex at ex facilisis vulputate. Nullam eget felis felis. Integer odio nibh, lobortis id gravida at, bibendum eu libero. Curabitur non ante lorem.</p>
                     </div>
-                 
-
-            </section>
+                </section>
+        
+        <section class="contactbutton">
+            <img src="Design/NAS_images_assets/NAS_BCIT_QA/images/contact.jpg">
+            
+            <center><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Contact Us</button></center>
+        
+        </section>
+        
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
@@ -134,7 +142,7 @@
                 <div class="row text-center">
                     <div class="col-md-4">
                         
-                        <h4 class="my-3">Web Dev></h4>
+                        <h4 class="my-3">Web Dev</h4>
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
@@ -316,7 +324,7 @@
             </div>
         </div>
         <!-- Contact-->
-        <section class="page-section float-right" id="contact">
+        <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
@@ -562,119 +570,147 @@
         <script src="js/scripts.js"></script>
     </body>
     <style>
-        
-                        .carousel-item {
-                  height: 65vh;
-                  min-height: 350px;
-                  background: no-repeat center center scroll;
-                  -webkit-background-size: cover;
-                  -moz-background-size: cover;
-                  -o-background-size: cover;
-                  background-size: cover;
-                }
+
+            .carousel-item {
+            height: 65vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            }
             .float {
-                float:right;
+             float:right;
              }
         
-        
-        /* Slideshow container */
-.slideshow-container {
+        /* Container needed to position the button. Adjust the width as needed */
+.contactbutton {
   position: relative;
-  background: white;
+  width: 50%;
 }
 
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+/* Style the button and place it in the middle of the container/image */
+.contactbutton .btn {
+    
+     margin-left: auto;
+  margin-right: auto;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
 
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    left: 90%;
   color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-  text-align: center;
-  padding: 20px;
-  background: white;
-}
-
-/* The dots/bullets/indicators */
-.dot {
+  font-size: 16px;
+  border: none;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  border-radius: 5px;
 }
 
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
 
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
+            /* Slideshow container */
+            .slideshow-container {
+              position: relative;
+              background: white;
+            }
 
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
-    </style>
+            /* Slides */
+            .mySlides {
+              display: none;
+              padding: 80px;
+              text-align: center;
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              margin-top: -30px;
+              padding: 16px;
+              color: #888;
+              font-weight: bold;
+              font-size: 20px;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+              position: absolute;
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+              background-color: rgba(0,0,0,0.8);
+              color: white;
+            }
+
+            /* The dot/bullet/indicator container */
+            .dot-container {
+              text-align: center;
+              padding: 20px;
+              background: white;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+
+            /* Add a background color to the active dot/circle */
+            .active, .dot:hover {
+              background-color: #717171;
+            }
+
+            /* Add an italic font style to all quotes */
+            q {font-style: italic;}
+
+            /* Add a blue color to the author */
+            .author {color: cornflowerblue;}
+                </style>
     
-    <script>
-    var slideIndex = 1;
-showSlides(slideIndex);
+            <script>
+                    var slideIndex = 1;
+                showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-    </script>
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
 </html>
