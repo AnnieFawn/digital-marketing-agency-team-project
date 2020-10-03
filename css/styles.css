@@ -120,6 +120,14 @@ ul ol {
   margin-bottom: 0;
 }
 
+ul {
+  padding: 0px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
 dt {
   font-weight: 700;
 }
@@ -3903,6 +3911,22 @@ input[type=button].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+}
+
+.nav-link {
+  padding: 0px 5px !important;
+}
+
+a#navbarDropdown {
+    color: #facf38;
+}
+
+.dropdown-item:hover, .dropdown-item:focus{
+  background-color: #fec812;
+}
+
+ul.navbar-nav.ml-auto li {
+    padding: 0px 3px;
 }
 
 .nav-link {
